@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Happy Granny's Day</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(216, 180, 254, 0.55), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(192, 132, 252, 0.45), transparent 35%),
+        linear-gradient(135deg, #f3e8ff, #e9d5ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      color: #4c1d95;
+      overflow-x: hidden;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 520px;
+      background: rgba(255, 255, 255, 0.96);
+      border-radius: 28px;
+      padding: 34px 24px;
+      text-align: center;
+      box-shadow: 0 20px 55px rgba(88, 28, 135, 0.25);
+      border: 2px solid rgba(168, 85, 247, 0.25);
+      animation: fadeIn 1s ease;
+      position: relative;
+      z-index: 2;
+    }
+
+    .icon {
+      font-size: 64px;
+      margin-bottom: 12px;
+      animation: wiggle 1.8s infinite;
+    }
+
+    h1 {
+      color: #7e22ce;
+      font-size: 36px;
+      margin-bottom: 14px;
+    }
+
+    .subtitle {
+      color: #6b21a8;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 16px;
+      color: #5b21b6;
+    }
+
+    .message-box {
+      background: #f3e8ff;
+      border: 2px dashed #a855f7;
+      border-radius: 20px;
+      padding: 18px;
+      color: #581c87;
+      font-size: 17px;
+      line-height: 1.7;
+      margin: 20px 0;
+    }
+
+    .owl-row {
+      font-size: 30px;
+      letter-spacing: 8px;
+      margin: 18px 0;
+    }
+
+    .signature {
+      margin-top: 22px;
+      color: #7e22ce;
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    .floating {
+      position: fixed;
+      bottom: -40px;
+      font-size: 28px;
+      animation: floatUp 9s linear infinite;
+      opacity: 0.75;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .floating:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .floating:nth-child(2) { left: 28%; animation-delay: 2s; }
+    .floating:nth-child(3) { left: 52%; animation-delay: 4s; }
+    .floating:nth-child(4) { left: 76%; animation-delay: 1s; }
+    .floating:nth-child(5) { left: 90%; animation-delay: 5s; }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes wiggle {
+      0%, 100% {
+        transform: rotate(0deg) scale(1);
+      }
+
+      25% {
+        transform: rotate(-5deg) scale(1.05);
+      }
+
+      50% {
+        transform: rotate(5deg) scale(1.08);
+      }
+
+      75% {
+        transform: rotate(-3deg) scale(1.05);
+      }
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 0.8;
+      }
+
+      100% {
+        transform: translateY(-120vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 30px;
+      }
+
+      p,
+      .message-box {
+        font-size: 16px;
+      }
+
+      .card {
+        padding: 28px 20px;
+      }
+
+      .owl-row {
+        letter-spacing: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="floating">🦉</div>
+  <div class="floating">💜</div>
+  <div class="floating">🦉</div>
+  <div class="floating">✨</div>
+  <div class="floating">🦉</div>
+
+  <div class="card">
+    <div class="icon">🦉</div>
+
+    <h1>Happy Granny's Day</h1>
+
+    <div class="subtitle">
+      To my wise and wonderful granny
+    </div>
+
+    <div class="owl-row">🦉 💜 🦉</div>
+
+    <p>
+      Granny, thank you for your love, your kindness, and your caring heart.
+      You make life feel warmer, brighter, and happier.
+    </p>
+
+    <div class="message-box">
+      Just like an owl, you are wise, special, and one of a kind.
+      I am so lucky to have you in my life. You are loved so much. 💜
+    </div>
+
+    <p>
+      I hope your day is as beautiful and special as you are.
+    </p>
+
+    <div class="signature">
+      From Ethan, with love 💜
+    </div>
+  </div>
+
+</body>
+</html>
